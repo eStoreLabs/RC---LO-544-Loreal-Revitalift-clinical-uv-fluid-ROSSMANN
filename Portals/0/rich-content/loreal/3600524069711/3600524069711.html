@@ -333,7 +333,12 @@ OCHRONA PRZED <strong>UVA&nbsp;I&nbsp;UVB</strong>
     </div>
     <script src="https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524069711/js/slider.js"></script>
     <script>
-
+        (() => {
+          if (!document.querySelector('.swiper1.swiper-initialized')) {
+            const sliderWrapper = document.querySelector(
+              '#es-loreal.es-loreal .es-slider__wrapper',
+            );
+        }
       const swiper = new Swiper('.swiper1', {
         loop: true,
         autoHeight: false,
